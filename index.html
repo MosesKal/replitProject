@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap" rel="stylesheet">
+
+  <style> @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap'); </style>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -22,11 +26,30 @@
         <!-- le menu de navigation : dans cette partie on aura le menu de navigation -->
         <nav class="container-nav">
           <ul class="nav-bar">
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item item-contact"><a class="nav-link link-contact" href="#">Contact</a></li>
+            <li class="nav-item display-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item display-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item display-item"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item item-contact display-item"><a class="nav-link link-contact" href="#">Contact</a></li>
+            <li class="nav-item item-hamburger">
+              <div class="display-hamburger">
+                <label for="btn"><img src="img/icon-hamburger.svg" style="width:100%"></label>
+              </div>
+            </li>
           </ul>
+        </nav>
+        <input type="checkbox" id="btn" checked></input>
+        <nav id="wrap" class="block">
+          <div class="triangle">
+            <div class="triangle-top"></div>
+          </div>
+          <div class="rectangle">
+            <ul class="wrap-ul">
+              <li class="wrap-item"><a class="wrap-link" href="#">About</a></li>
+              <li class="wrap-item"><a class="wrap-link" href="#">Services</a></li>
+              <li class="wrap-item"><a class="wrap-link" href="#">Projects</a></li>
+              <li class="wrap-item wrap-item-contact"><a class="wrap-link" href="#">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="banner">
@@ -37,11 +60,14 @@
     <main class="main-container">
       <!-- section 1 -->
       <section class="section1">
-        <div class="section1-part1">
-          <h2>Transform your brand</h2>
-          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
-            compelling visuals that do most of the marketing for you.</p>
-          <p><a href="#">LEARN MORE</a></p>
+        <div class="section1-part1 ">
+          <div class="style-text-1">
+            <h2>Transform your brand</h2>
+            <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+              through
+              compelling visuals that do most of the marketing for you.</p>
+            <div class="style-text-1-link_1"><a href="#">LEARN MORE</a></div>
+          </div>
         </div>
         <div class="section1-part2"></div>
       </section>
@@ -49,25 +75,34 @@
       <section class="section2">
         <div class="section2-part1"></div>
         <div class="section2-part2">
-          <h2>Stand out to the right audience</h2>
-          <p>Using a collaborative formula of designer. researchers, photographers, videographes, and copywriters, we'll
-            build and extend your brand in digital places</p>
-          <p><a href="#">LEARN MORE</a></p>
+          <div class="style-text-1">
+            <h2>Stand out to the right audience</h2>
+            <p>Using a collaborative formula of designer. researchers, photographers, videographes, and copywriters,
+              we'll
+              build and extend your brand in digital places</p>
+            <div class="style-text-1-link_2"><a href="#">LEARN MORE</a></div>
+          </div>
         </div>
       </section>
       <!-- section 2-->
       <section class="section3">
         <div class="section3-part1">
-          <h2>Graphic Design</h2>
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-            potential clients' attention.</p>
-          <p><a href="#">LEARN MORE</a></p>
+          <div class="style-text-2 color-style-1">
+            <h2>Graphic Design</h2>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              potential clients' attention.
+            </p>
+          </div>
         </div>
         <div class="section3-part2">
-          <h2>Photography</h2>
-          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
-            image.</p>
-          <p><a href="#">LEARN MORE</a></p>
+          <!-- le cconteneur principal -->
+          <!-- le cconteneur principal -->
+          <div class="style-text-2 color-style-2">
+            <h2>Photography</h2>
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              image.
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -76,14 +111,13 @@
       <!-- Section 1 footer -->
       <section>
         <h3 class="section-titre">client testimonials</h3>
-        <div classs="footer_section" style="display : flex; align-self: flex-start; justify-content: space-around">
+        <div class="personnage-section" style="">
           <div class="section-footer section1-footer-part1">
             <span class="container-image"><img src="img/image-emily.jpg"></span>
             <p> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
               always hit.</p>
             <h5>Emily R.</h5>
             <span>Marketing Director</span>
-
           </div>
           <div class="section-footer section1-footer-part2">
             <span class="container-image"><img src="img/image-thomas.jpg"></span>
@@ -91,7 +125,6 @@
               enjoyable experience</p>
             <h5>Thomas S.</h5>
             <span>Chief Operating officer</span>
-
           </div>
           <div class="section-footer section1-footer-part3">
             <span class="container-image"><img src="img/image-jennie.jpg" alt="image-jennie"
@@ -104,11 +137,32 @@
         </div>
       </section>
       <!-- Section 2 footer -->
-      <section classs="section2-footer"></section>
+      <section class="section2-footer">
+        <div class="gallery-1"></div>
+        <div class="gallery-2"></div>
+        <div class="gallery-3"></div>
+        <div class="gallery-4"></div>
+      </section>
       <!-- Section 3 footer -->
-      <section classs="section3-footer"></section>
+      <section class="section3-footer">
+        <div class="container-logo">
+          <div class="logo-principal">
+            <a href="#"><img src="img/logo_modified.svg" class="logo-sunny"></a>
+          </div>
+          <div class="content-link">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+          </div>
+          <div class="logo-reseaux-sociaux">
+            <a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+          </div>
+        </div>
+      </section>
     </footer>
   </div>
 </body>
-
 </html>
