@@ -43,6 +43,9 @@ html, body {
   color: white;
   font-family: 'Barlow', sans-serif;
 }
+.nav-link:hover{
+  text-decoration: underline;
+}
 .display-hamburger{
   display:none;
 }
